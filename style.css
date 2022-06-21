@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  z-index: 9999;
+  padding: 0 10px;
+}
+header nav .logo {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main .banner {
+  height: 500px;
+  background: url(img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .restaurant-txt, main .final-txt, main .plat-txt {
+  height: auto;
+  width: 70%;
+  text-align: justify;
+  margin: 100px auto;
+}
+main .restaurant-txt h3, main .final-txt h3, main .plat-txt h3 {
+  margin-bottom: 10px;
+}
+main .parallax {
+  width: 100%;
+  height: 300px;
+  background: url(img/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .section-plats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .section-plats .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .section-plats .container img {
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+}
+main .section-plats .container img:hover {
+  opacity: 0.8;
+}
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section-plats .container {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 900px) and (min-width: 1517px) {
+  .section-plats .container {
+    max-width: 1500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

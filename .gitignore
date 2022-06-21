@@ -1,0 +1,5 @@
+*.scss
+*.json
+/.vscode
+/node_modules
+*.map
